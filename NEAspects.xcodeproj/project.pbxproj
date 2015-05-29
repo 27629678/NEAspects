@@ -14,6 +14,14 @@
 		7F781DA01B18AAB00007D5A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F781D9F1B18AAB00007D5A8 /* Images.xcassets */; };
 		7F781DA31B18AAB00007D5A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F781DA11B18AAB00007D5A8 /* LaunchScreen.xib */; };
 		7F781DAF1B18AAB10007D5A8 /* NEAspectsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781DAE1B18AAB10007D5A8 /* NEAspectsTests.m */; };
+		7F781DBE1B18AB780007D5A8 /* NEAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781DBD1B18AB780007D5A8 /* NEAspects.m */; };
+		7F781DBF1B18AB780007D5A8 /* NEAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781DBD1B18AB780007D5A8 /* NEAspects.m */; };
+		7F781DC31B18B49C0007D5A8 /* NEAspectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781DC21B18B49C0007D5A8 /* NEAspectContainer.m */; };
+		7F781DC41B18B49C0007D5A8 /* NEAspectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781DC21B18B49C0007D5A8 /* NEAspectContainer.m */; };
+		7F781DC71B18B4DF0007D5A8 /* NEAspectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781DC61B18B4DF0007D5A8 /* NEAspectInfo.m */; };
+		7F781DC81B18B4DF0007D5A8 /* NEAspectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781DC61B18B4DF0007D5A8 /* NEAspectInfo.m */; };
+		7F781DCB1B18B83B0007D5A8 /* NSInvocation+NEAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781DCA1B18B83B0007D5A8 /* NSInvocation+NEAspects.m */; };
+		7F781DCC1B18B83B0007D5A8 /* NSInvocation+NEAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781DCA1B18B83B0007D5A8 /* NSInvocation+NEAspects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,14 @@
 		7F781DA81B18AAB10007D5A8 /* NEAspectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEAspectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F781DAD1B18AAB10007D5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F781DAE1B18AAB10007D5A8 /* NEAspectsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NEAspectsTests.m; sourceTree = "<group>"; };
+		7F781DBC1B18AB780007D5A8 /* NEAspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEAspects.h; sourceTree = "<group>"; };
+		7F781DBD1B18AB780007D5A8 /* NEAspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEAspects.m; sourceTree = "<group>"; };
+		7F781DC11B18B49C0007D5A8 /* NEAspectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEAspectContainer.h; sourceTree = "<group>"; };
+		7F781DC21B18B49C0007D5A8 /* NEAspectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEAspectContainer.m; sourceTree = "<group>"; };
+		7F781DC51B18B4DF0007D5A8 /* NEAspectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEAspectInfo.h; sourceTree = "<group>"; };
+		7F781DC61B18B4DF0007D5A8 /* NEAspectInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEAspectInfo.m; sourceTree = "<group>"; };
+		7F781DC91B18B83B0007D5A8 /* NSInvocation+NEAspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+NEAspects.h"; sourceTree = "<group>"; };
+		7F781DCA1B18B83B0007D5A8 /* NSInvocation+NEAspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+NEAspects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		7F781D911B18AAB00007D5A8 /* NEAspects */ = {
 			isa = PBXGroup;
 			children = (
+				7F781DC01B18AB830007D5A8 /* Aspects */,
 				7F781D961B18AAB00007D5A8 /* AppDelegate.h */,
 				7F781D971B18AAB00007D5A8 /* AppDelegate.m */,
 				7F781D991B18AAB00007D5A8 /* ViewController.h */,
@@ -117,6 +134,21 @@
 				7F781DAD1B18AAB10007D5A8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F781DC01B18AB830007D5A8 /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				7F781DBC1B18AB780007D5A8 /* NEAspects.h */,
+				7F781DBD1B18AB780007D5A8 /* NEAspects.m */,
+				7F781DC51B18B4DF0007D5A8 /* NEAspectInfo.h */,
+				7F781DC61B18B4DF0007D5A8 /* NEAspectInfo.m */,
+				7F781DC11B18B49C0007D5A8 /* NEAspectContainer.h */,
+				7F781DC21B18B49C0007D5A8 /* NEAspectContainer.m */,
+				7F781DC91B18B83B0007D5A8 /* NSInvocation+NEAspects.h */,
+				7F781DCA1B18B83B0007D5A8 /* NSInvocation+NEAspects.m */,
+			);
+			name = Aspects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +254,10 @@
 				7F781D9B1B18AAB00007D5A8 /* ViewController.m in Sources */,
 				7F781D981B18AAB00007D5A8 /* AppDelegate.m in Sources */,
 				7F781D951B18AAB00007D5A8 /* main.m in Sources */,
+				7F781DC31B18B49C0007D5A8 /* NEAspectContainer.m in Sources */,
+				7F781DC71B18B4DF0007D5A8 /* NEAspectInfo.m in Sources */,
+				7F781DCB1B18B83B0007D5A8 /* NSInvocation+NEAspects.m in Sources */,
+				7F781DBE1B18AB780007D5A8 /* NEAspects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F781DCC1B18B83B0007D5A8 /* NSInvocation+NEAspects.m in Sources */,
+				7F781DC81B18B4DF0007D5A8 /* NEAspectInfo.m in Sources */,
+				7F781DBF1B18AB780007D5A8 /* NEAspects.m in Sources */,
 				7F781DAF1B18AAB10007D5A8 /* NEAspectsTests.m in Sources */,
+				7F781DC41B18B49C0007D5A8 /* NEAspectContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

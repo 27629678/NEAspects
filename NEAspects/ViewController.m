@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "NEAspects.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self aspect_hookSelector:@selector(viewWillAppear:) withOption:NEAspectPositionAfter usingBlock:^{
+        NSLog(@"aspect did execute block.");
+    } error:nil];
 }
 
 - (void)didReceiveMemoryWarning {
