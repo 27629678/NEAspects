@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1A245D1B25CD4300DC51A0 /* NEAspectIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A245C1B25CD4300DC51A0 /* NEAspectIdentifier.m */; };
 		7F781D951B18AAB00007D5A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781D941B18AAB00007D5A8 /* main.m */; };
 		7F781D981B18AAB00007D5A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781D971B18AAB00007D5A8 /* AppDelegate.m */; };
 		7F781D9B1B18AAB00007D5A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F781D9A1B18AAB00007D5A8 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F1A245A1B25CCE900DC51A0 /* NEAspectsOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NEAspectsOptions.h; sourceTree = "<group>"; };
+		7F1A245B1B25CD4300DC51A0 /* NEAspectIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEAspectIdentifier.h; sourceTree = "<group>"; };
+		7F1A245C1B25CD4300DC51A0 /* NEAspectIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEAspectIdentifier.m; sourceTree = "<group>"; };
 		7F781D8F1B18AAB00007D5A8 /* NEAspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEAspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F781D931B18AAB00007D5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F781D941B18AAB00007D5A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,6 +151,9 @@
 				7F781DC21B18B49C0007D5A8 /* NEAspectContainer.m */,
 				7F781DC91B18B83B0007D5A8 /* NSInvocation+NEAspects.h */,
 				7F781DCA1B18B83B0007D5A8 /* NSInvocation+NEAspects.m */,
+				7F1A245A1B25CCE900DC51A0 /* NEAspectsOptions.h */,
+				7F1A245B1B25CD4300DC51A0 /* NEAspectIdentifier.h */,
+				7F1A245C1B25CD4300DC51A0 /* NEAspectIdentifier.m */,
 			);
 			name = Aspects;
 			sourceTree = "<group>";
@@ -256,6 +263,7 @@
 				7F781D951B18AAB00007D5A8 /* main.m in Sources */,
 				7F781DC31B18B49C0007D5A8 /* NEAspectContainer.m in Sources */,
 				7F781DC71B18B4DF0007D5A8 /* NEAspectInfo.m in Sources */,
+				7F1A245D1B25CD4300DC51A0 /* NEAspectIdentifier.m in Sources */,
 				7F781DCB1B18B83B0007D5A8 /* NSInvocation+NEAspects.m in Sources */,
 				7F781DBE1B18AB780007D5A8 /* NEAspects.m in Sources */,
 			);
@@ -456,6 +464,7 @@
 				7F781DB41B18AAB10007D5A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F781DB51B18AAB10007D5A8 /* Build configuration list for PBXNativeTarget "NEAspectsTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +473,7 @@
 				7F781DB71B18AAB10007D5A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NEAspectsOptions.h"
+#import "NEAspectIdentifier.h"
+
 @interface NEAspectContainer : NSObject
+
+@property (atomic, copy) NSArray* beforeAspects;
+
+@property (atomic, copy) NSArray* insteadAspects;
+
+@property (atomic, copy) NSArray* afterAspects;
+
+
+
+- (BOOL)hasAspects;
+
+- (BOOL)removeAspect:(id)aspect;
+
+- (void)addAspect:(NEAspectIdentifier *)identifier useOption:(NEAspectOptions)option;
 
 @end

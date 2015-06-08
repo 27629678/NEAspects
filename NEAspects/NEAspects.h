@@ -8,13 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_OPTIONS(NSUInteger, NEAspectOptions) {
-    NEAspectPositionAfter   = 0,
-    NEAspectPositionInstead = 1,
-    NEAspectPositionBefore  = 2,
-    
-    NEAspectOptionAutomaticRemoval = 1 << 3,
-};
+#import "NEAspectsOptions.h"
 
 @interface NSObject (NEAspects)
 
