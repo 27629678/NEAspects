@@ -42,17 +42,6 @@ static BOOL aspect_allowAddHook(NSObject *target, SEL aSelector, NEAspectOptions
     return YES;
 }
 
-static NSMutableDictionary* aspect_getSwizzledClassesDict()
-{
-    static NSMutableDictionary* retDict;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        retDict = [NSMutableDictionary dictionary];
-    });
-    
-    return retDict;
-}
-
 static void aspect_executeInLock(dispatch_block_t block)
 {
     static OSSpinLock aspect_lock = OS_SPINLOCK_INIT;
