@@ -23,6 +23,17 @@
     [self aspect_hookSelector:@selector(viewWillAppear:) withOption:NEAspectPositionAfter usingBlock:^{
         NSLog(@"aspect did execute block.");
     } error:nil];
+    
+    [self aspect_hookSelector:@selector(viewDidAppear:) withOption:NEAspectPositionBefore usingBlock:^ {
+        NSLog(@"aspect view did appear excute.");
+    } error:nil];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    NSLog(@"view did appear.");
 }
 
 - (void)didReceiveMemoryWarning {

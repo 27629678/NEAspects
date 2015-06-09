@@ -19,10 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self aspect_hookSelector:@selector(description) withOption:NEAspectPositionAfter usingBlock:^{
-        NSLog(@"");
-    } error:nil];
-    
     return YES;
 }
 
